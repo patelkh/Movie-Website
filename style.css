@@ -88,7 +88,7 @@ body {
     background-color: black;
     border-radius: 50%;
     height: 18px;
-    width: 22px;
+    width: 18px;
     position: absolute;
     right: 1px;
     cursor: pointer;
@@ -150,7 +150,6 @@ body {
 }
 
 .movie-list-container {
-    padding-left: 30px;
     position: relative;
     overflow-x: hidden;
 }
@@ -163,16 +162,18 @@ body {
 }
 
 .movie-list-item {
-    height: 40vh;
+    height: 30vh;
     width: 20vh;
     margin-right: 10px;
+    
 }
 
 .movie-list-item-img {
     width: 20vh;
-    object-fit: cover;
+    height: 28vh;
+    object-fit:fill;
     transition: all 1s ease-in-out;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .movie-list-item .movie-list-item-img:hover {
@@ -187,4 +188,42 @@ body {
     color: lightgray;
     opacity: .5;
     cursor: pointer;
+}
+
+.navbar.active {
+    background-color: white;
+}
+.navbar-container.active {
+    color: black
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.left-menu-icon.active {
+    color: black;
+}
+
+.container.active {
+    background-color: white;
+}
+
+.movie-list-item {
+    color: white;
+
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.toogle-ball.active {
+    transform: translateX(-20px)
+}
+
+@media only screen and (max-width: 940px) {
+    .menu-container{
+        display: none;
+    }
 }
